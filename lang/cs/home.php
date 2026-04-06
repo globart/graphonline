@@ -165,7 +165,7 @@
     $g_lang["color"] = "Barva";
     $g_lang["alpha"] = "Průhlednost";
 
-    $g_lang["background_style"] = "Background";
+    $g_lang["background_style"] = "Styl pozadí";
 
     $g_lang["adjacency_matrix_multigraph_description"] = "Multigrafická matice obsahuje váhu minimálních hran mezi vrcholy.";
 
@@ -305,46 +305,46 @@
     $g_lang["max_clique_size_is"] = "Velikost maximální kliky je ";
     $g_lang["max_clique_contains"] = ". Klika obsahuje tyto vrcholy: ";    
 
-    $g_lang["remove_background_image"] = "Remove background image";
-    $g_lang["upload"] = "Upload";
-    $g_lang["background_image"] = "Background image";
+    $g_lang["remove_background_image"] = "Odstranit obrázek na pozadí";
+    $g_lang["upload"] = "Nahrát";
+    $g_lang["background_image"] = "Obrázek na pozadí";
 
-    $g_lang['wrong_image_background_format'] = "Wrong image format. Only JPEG and PNG are supported";
-    $g_lang['wrong_image_background_size'] = "Image size is too big. Image size must be less than {0} pixels.";
+    $g_lang['wrong_image_background_format'] = "Nesprávný formát obrázku. Podporovány jsou pouze JPEG a PNG.";
+    $g_lang['wrong_image_background_size'] = "Obrázek je příliš velký. Maximální velikost je {0} pixelů.";
 
-    $g_lang['text_size'] = "Text size";
+    $g_lang['text_size'] = "Velikost textu";
 
-    $g_lang['you_have_autosave'] = "You have autosave for this graph.";
-    $g_lang['load_oiginal_or_autosaved'] = "Would you like to load original graph or autosaved graph?";
-    $g_lang['use_mouse_for_moving'] = "Use🖱️for moving";
-    $g_lang['original_graph'] = "Original graph";
-    $g_lang['autosaved_graph'] = "Autosaved graph";
+    $g_lang['you_have_autosave'] = "Pro tento graf existuje automaticky uložená verze.";
+    $g_lang['load_oiginal_or_autosaved'] = "Chcete načíst původní graf, nebo automaticky uloženou verzi?";
+    $g_lang['use_mouse_for_moving'] = "Pro posun použijte 🖱️";
+    $g_lang['original_graph'] = "Původní graf";
+    $g_lang['autosaved_graph'] = "Automaticky uložený graf";
 
-    $g_lang['open_last_used_graph'] = "Open Recent Graph";
+    $g_lang['open_last_used_graph'] = "Otevřít naposledy použitý graf";
 
-    $g_lang['vertex_name_place_holder'] = "vertex name";
+    $g_lang['vertex_name_place_holder'] = "název vrcholu";
 
-    $g_lang["max_independent_set"] = "Max Independent Set";
-    $g_lang["max_independent_set_not_found"] = "Max Independent Set is not found";
-    $g_lang["max_independent_set_size_is"] = "Max Independent Set size is ";
-    $g_lang["max_independent_set_contains"] = ". Set contains these vertecies: ";
+    $g_lang["max_independent_set"] = "Maximální nezávislá množina";
+    $g_lang["max_independent_set_not_found"] = "Maximální nezávislá množina nebyla nalezena";
+    $g_lang["max_independent_set_size_is"] = "Velikost maximální nezávislé množiny je ";
+    $g_lang["max_independent_set_contains"] = ". Množina obsahuje tyto vrcholy: ";
 
-    $g_lang['find_all_shortest_pathes'] = "Find all shortest paths between 2 vertices";
-    $g_lang['number_of_shortest_pathes_from'] = "Number of shortest paths from ";
-    $g_lang['length_is'] = "length is ";
+    $g_lang['find_all_shortest_pathes'] = "Najít všechny nejkratší cesty mezi 2 vrcholy";
+    $g_lang['number_of_shortest_pathes_from'] = "Počet nejkratších cest z ";
+    $g_lang['length_is'] = "délka je ";
 
-    $g_lang['graph_is_to_large'] = "The graph is too large for this algorithm (<span id=\"current_graph_size\">X</span> vertices, <span id=\"current_edge_number\">X</span> edges).";
-    $g_lang['algorith_supports_max_limit'] = "The algorithm supports graphs of size no larger than <span id=\"algorithm_max_limit\">X</span> vertices and <span id=\"algorithm_edge_limit\">X</span> edges.";
-    $g_lang['error'] = "Error";
+    $g_lang['graph_is_to_large'] = "Graf je pro tento algoritmus příliš velký (<span id=\"current_graph_size\">X</span> vrcholů, <span id=\"current_edge_number\">X</span> hran).";
+    $g_lang['algorith_supports_max_limit'] = "Algoritmus podporuje grafy maximálně o velikosti <span id=\"algorithm_max_limit\">X</span> vrcholů a <span id=\"algorithm_edge_limit\">X</span> hran.";
+    $g_lang['error'] = "Chyba";
 
-    $g_lang['salesman_problem'] = "Salesman Problem";
-    $g_lang['no_solution'] = "The solution doesn't exist";
-    $g_lang['shortest_loop_is'] = "The length of shortest possible loop is ";
-    $g_lang['salesman_path_problem'] = "Salesman Path Problem";
-    $g_lang['shortest_path_is'] = "The length of shortest path is ";
+    $g_lang['salesman_problem'] = "Problém obchodního cestujícího";
+    $g_lang['no_solution'] = "Řešení neexistuje";
+    $g_lang['shortest_loop_is'] = "Délka nejkratší možné smyčky je ";
+    $g_lang['salesman_path_problem'] = "Cestující – problém cesty";
+    $g_lang['shortest_path_is'] = "Délka nejkratší cesty je ";
 
-    $g_lang['default_style'] = "Default";
-    $g_lang['night_style'] = "Night";
-    $g_lang['large_high_contrast_style'] = "Large High Contrast";
-    $g_lang['styles'] = "Styles";
+    $g_lang['default_style'] = "Výchozí";
+    $g_lang['night_style'] = "Noční režim";
+    $g_lang['large_high_contrast_style'] = "Velké vysoký kontrast";
+    $g_lang['styles'] = "Styly";
 ?>

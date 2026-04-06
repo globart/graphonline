@@ -348,7 +348,7 @@
     width: 30px;
     height: 22px;
     background: url('/i/image/flags/flags_atlas.png') no-repeat;
-    background-position: -30 -22px;
+    background-position: -30px -22px;
 }
 
 #flag_fr
