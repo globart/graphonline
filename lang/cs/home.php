@@ -347,4 +347,6 @@
     $g_lang['night_style'] = "Noční režim";
     $g_lang['large_high_contrast_style'] = "Velké vysoký kontrast";
     $g_lang['styles'] = "Styly";
+
+    $g_lang['this_is_graph_image_link'] = "The image is saved and will be available at the following link:";
 ?>

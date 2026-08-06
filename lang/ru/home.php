@@ -353,4 +353,6 @@
     $g_lang['night_style'] = "Ночной";
     $g_lang['large_high_contrast_style'] = "Крупный высоко-контрастностный";
     $g_lang['styles'] = "Стили";
+
+    $g_lang['this_is_graph_image_link'] = "Изображение сохранено и будет доступно по ссылке:";
 ?>

@@ -348,4 +348,6 @@ Dodaliśmy polskie tłumaczenie, Patryk</a>";
     $g_lang['night_style'] = "Night";
     $g_lang['large_high_contrast_style'] = "Large High Contrast";
     $g_lang['styles'] = "Styles";
+
+    $g_lang['this_is_graph_image_link'] = "The image is saved and will be available at the following link:";
 ?>

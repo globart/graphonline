@@ -483,22 +483,12 @@
 		<form>
 		<fieldset>
 				<p><?= L('this_is_graph_link')?> <br/>
-				<input type="text" name="graphName" id="GraphName" onClick="this.select();">
+          <input type="text" name="graphName" id="GraphName" style="width:calc(100% - 40px); " onClick="this.select();">
+          <button type="button" id="CopyGraphLink" class="btn btn-sm"><span class="bi bi-copy"></span></button>
 				</p>
-				<p><?= L('share_graph_description') ?></p>
-<? $sharePageURL = $_SERVER['SERVER_NAME'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);?>
-<ul class="share-buttons" id="ShareSavedGraph">
-	<li><a href="http://vkontakte.ru/share.php?url=http://<?= $sharePageURL ?>?graph=XXXX&text=<?= L('share_graph_text') ?>" target="_blank" title="Share on Vkontate"><i class="fa fa-vk fa-2x"></i></a></li>
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://<?= $sharePageURL ?>?graph=XXXX&t=<?= L('share_graph_text') ?>" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-	<li><a href="https://twitter.com/intent/tweet?source=http://<?= $sharePageURL ?>?graph=XXXX&text=<?= L('share_graph_text') ?> http://<?= $sharePageURL ?>?graph=XXXX" target="_blank" title="Tweet"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-	<li><a href="https://plus.google.com/share?url=http://<?= $sharePageURL ?>?graph=XXXX" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
-	<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://<?= $sharePageURL ?>?graph=XXXX&title=<?= L('share_graph_text') ?>&summary=<?= L('share_graph_text') ?> &source=http://<?= $sharePageURL ?>?graph=XXXX" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-	<li><a href="mailto:?subject=<?= L('share_graph_text') ?>&body=http://<?= $sharePageURL ?>?graph=XXXX" target="_blank" title="Email"><i class="fa fa-envelope fa-2x"></i></a></li>
-</ul>
-
 		</fieldset>
 		</form>
-       </div>
+  </div>
 
 <div id="saveImageDialog">
 <form>
@@ -512,15 +502,12 @@
 <p class="hidden-phone">
 <a href="<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png" target="_blank" class="hidden-phone showShareImage" id="showSavedImageGraphRef"><img src="<?= $protocol . $shareImagePageURL ?>/tmp/saved/XX/XXXXX.png" id="showSavedImageGraph" class="showShareImage"></a>
 </p>
-<p><?= L('share_graph_description') ?></p>
-<ul class="share-buttons" id="ShareSavedImageGraph">
-<li><a href="http://vkontakte.ru/share.php?url=<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png&text=<?= L('share_graph_text') ?>" target="_blank" title="Share on Vkontate"><i class="fa fa-vk fa-2x"></i></a></li>
-<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png&t=<?= L('share_graph_text') ?>" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-<li><a href="https://twitter.com/intent/tweet?source=<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png&text=<?= L('share_graph_text') ?> <?= $protocol . $sharePageURL ?>tmp/saved/XX/XXXXX.png" target="_blank" title="Tweet"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-<li><a href="https://plus.google.com/share?url=<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
-<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png&title=<?= L('share_graph_text') ?>&summary=<?= L('share_graph_text') ?> &source=<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-<li><a href="mailto:?subject=<?= L('share_graph_text') ?>&body=<?= $protocol . $shareImagePageURL ?>tmp/saved/XX/XXXXX.png" target="_blank" title="Email"><i class="fa fa-envelope fa-2x"></i></a></li>
-</ul>
+<div id="ShareSavedImageGraph">
+  <p><?= L('this_is_graph_image_link')?><br/>
+    <input type="text" name="graphImageName" id="GraphImageName" style="display:inline-block; width:calc(100% - 42px); box-sizing:border-box; vertical-align:middle;" onClick="this.select();">
+    <button type="button" id="CopyGraphImageLink" class="btn btn-sm" style="display:inline-block; vertical-align:middle; margin-left:4px;"><span class="bi bi-copy"></span></button>
+  </p>
+</div>
 
 </fieldset>
 </form>

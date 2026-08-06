@@ -36,8 +36,11 @@ SavedDialogGraphHandler.prototype.show = function(object)
 
  	document.getElementById('GraphName').select();
 
-        document.getElementById("ShareSavedGraph").innerHTML = 
-		document.getElementById("ShareSavedGraph").innerHTML.replace(/graph=([A-Za-z]*)/g, "graph=" + this.app.GetGraphName());
+	var copyButton = document.getElementById('CopyGraphLink');
+	if (copyButton) {
+		copyButton.onclick = this.copyGraphLink.bind(this);
+		this.setCopyButtonIcon('bi bi-copy');
+	}
 
 	$( "#saveDialog" ).dialog({
 		resizable: false,
@@ -48,5 +51,58 @@ SavedDialogGraphHandler.prototype.show = function(object)
 		buttons: dialogButtons,
 		dialogClass: 'EdgeDialog'
 	});
-
 }
+
+SavedDialogGraphHandler.prototype.copyGraphLink = function()
+{
+	var graphInput = document.getElementById('GraphName');
+	if (!graphInput) {
+		return;
+	}
+
+	var text = graphInput.value;
+	if (!text) {
+		return;
+	}
+
+	var self = this;
+	if (navigator.clipboard && navigator.clipboard.writeText) {
+		navigator.clipboard.writeText(text).then(function() {
+			self.setCopyButtonIcon('bi bi-check2-square');
+		}, function() {
+			self.fallbackCopyText(text);
+		});
+	} else {
+		if (this.fallbackCopyText(text)) {
+			this.setCopyButtonIcon('bi bi-check2-square');
+		}
+	}
+};
+
+SavedDialogGraphHandler.prototype.fallbackCopyText = function(text)
+{
+	var textarea = document.createElement('textarea');
+	textarea.value = text;
+	document.body.appendChild(textarea);
+	textarea.select();
+
+	var successful = false;
+	try {
+		successful = document.execCommand('copy');
+	} catch (err) {
+		successful = false;
+	}
+	document.body.removeChild(textarea);
+	if (successful) {
+		this.setCopyButtonIcon('bi bi-check2-square');
+	}
+	return successful;
+};
+
+SavedDialogGraphHandler.prototype.setCopyButtonIcon = function(iconClass)
+{
+	var icon = document.querySelector('#CopyGraphLink span');
+	if (icon) {
+		icon.className = iconClass;
+	}
+};
